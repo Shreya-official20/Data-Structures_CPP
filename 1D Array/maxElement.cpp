@@ -37,11 +37,5 @@ int main(){
 
 
 
-int minimumElement(vector<int> &myArr){
-    int minEle = (int)1e9;
-    for(int i=0;i<myArr.size();i++){
-        minEle = min(myArr[i], minEle);
-    }
-    return minEle;
-}
+
 
