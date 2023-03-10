@@ -1,1 +1,1 @@
-int flag = 1;
+return 0;

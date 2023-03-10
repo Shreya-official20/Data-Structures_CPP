@@ -11,9 +11,8 @@ int main(){
     cin>>num;
 
     while(num!=0){
-        count++;
-        
         num/=10;
+        count++;
     }
     cout<<count<<endl;
     return 0;
