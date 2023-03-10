@@ -1,41 +1,21 @@
-//find max element in the array(arr, num)
-#include<iostream>
-#include<algorithm>
-#include<vector>
+//print minimum no in arr
+#include <iostream>  
+using namespace std ;
 
-using namespace std;
-
-int maxElement(vector<int> &arr){
-    int maxEle = -(int)1e9;
-    for(int i=0;i<arr.size(); i++){
-        maxEle = max(arr[i], maxEle);
-    }
-    return maxEle;
-}
-
-int main(){
+int largest ( int arr [ ] , int n )  
+{    
+    int max = arr [ 0 ] ;   
     
-    vector<int>arr = {1,2,3,4,5,6,7};
-
-    // for(int i=0;i<arr.size(); i++){
-    //     cout<<arr[i]<<" ";
-    // }
-    
-
-    cout<<maxElement(arr);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    for ( int i = 1 ; i < n ; i++)  
+        if ( arr [ i ] > max )  
+            max = arr [ i ] ;  
+    return max ;  
+}  
+// Driver Code  
+int main ( )  
+{  
+    int arr [ ] = { 10 , 324 , 45 , 90 , 9808 } ;  
+    int n = sizeof ( arr ) / sizeof (arr [ 0 ] ) ;  
+    cout << " Largest in given array is " << largest ( arr , n ) ;  
+    return 0 ;  
+}  

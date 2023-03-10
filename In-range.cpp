@@ -6,7 +6,7 @@ int main(){
     cout<<"Number:"<<endl;
     cin>>N;
 
-    if(N <= 1 && N >= 100){
+    if(N >= 1 && N <= 100){
         cout<<"Number is in Range"<<endl;
     }
     else{
