@@ -12,8 +12,8 @@ int firstIndexOf9(vector<int> &arr, int data){
     while(si <= ei){
         int mid = (si+ei)/2;
         if(arr[mid] == data){
-            if(mid-1>=0 && arr[mid-1] == data){
-                ei = mid-1;
+            if(mid+1 < arr.size() && arr[mid+1] == data){
+                si = mid+1;
             } else{
                 return mid;
             }
