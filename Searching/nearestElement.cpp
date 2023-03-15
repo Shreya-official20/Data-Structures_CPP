@@ -25,10 +25,18 @@ int nearestElement(vector<int> &arr, int data){
 }
 
 int main(){
-   
-    vector<int>arr = {1,3,12,14,23,34,55,65,75,78};
-    int data = 20;
 
+    vector<int>arr = {1,3,12,14,23,34,55,65,75,78};
+    int data = 20;                                       
+// int n; 
+//     cin>>n; 
+//     int a;
+//     vector<int> v;
+//     for(int i=0 ; i<n ; i++)
+//     {
+//         cin>>a;
+//         v.push_back(a);
+//     }
     cout<<nearestElement(arr, data)<<endl;
     
 }
