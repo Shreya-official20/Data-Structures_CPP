@@ -13,3 +13,38 @@
 // Input: nums = [3,4,5,1,2]
 // Output: 1
 // Explanation: The original array was [1,2,3,4,5] rotated 3 times.
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int findMin(vector<int>& arr) {
+        int start = 0;
+        int end = arr.size()-1;
+
+        if(arr[start] <= arr[end]){      //array is sorted
+            return arr[start];
+        }
+
+        while(start<end){
+            int mid = start+(end-start)/2;
+
+            if(arr[mid] < arr[end]){
+                end = mid;
+            } 
+            else{
+                start = mid+1;
+            }       
+            }
+            return arr[start];
+    }
+
+    int main()
+{
+    vector<int> arr = {3,2,1,5,6,4};
+    int k = 2;
+    findMin(arr);
+
+   
+}

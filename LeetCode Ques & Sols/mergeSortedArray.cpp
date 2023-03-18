@@ -52,13 +52,5 @@ int main(){
         cout << arr1[k] << " ";
     }
   
-    // int arr3[n1+n2];
-    // mergeArrays(arr1, arr2, n1, n2, arr3);
-  
-    
-    // for (int i=0; i < n1+n2; i++)
-    //     cout << arr3[i] << " ";
-  
-    return 0;
-   
+    return 0;   
 }
