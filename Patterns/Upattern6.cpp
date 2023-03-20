@@ -1,3 +1,12 @@
+//hollow diamond
+//    * 
+//   * * 
+//  *   * 
+// *     * 
+//  *   * 
+//   * * 
+//    * 
+   
 #include<iostream>
 using namespace std;
 

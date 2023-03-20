@@ -1,3 +1,10 @@
+// reverse triangle
+// * * * * *
+//  * * * *
+//   * * *
+//    * *
+//     *
+
 #include<iostream>
 using namespace std;
 

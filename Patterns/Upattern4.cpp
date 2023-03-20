@@ -1,3 +1,14 @@
+//diamond using space-text
+//     * 
+//    * * 
+//   * * * 
+//  * * * * 
+// * * * * * 
+//  * * * * 
+//   * * * 
+//    * * 
+//     * 
+    
 #include<iostream>
 using namespace std;
 
