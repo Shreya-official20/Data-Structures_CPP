@@ -42,9 +42,9 @@ int findMin(vector<int>& arr) {
 
     int main()
 {
-    vector<int> arr = {3,2,1,5,6,4};
-    int k = 2;
-    findMin(arr);
+    vector<int> arr = {4,5,6,7,0,1,2};
+
+    cout<<findMin(arr);
 
    
 }

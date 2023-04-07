@@ -21,6 +21,7 @@ int findKthLargest(vector<int>& arr, int k) {
         {
             cout << i << ' ';
         } 
+        cout<<endl;
         int ans = arr.at(k - 1);
 
         return ans;
@@ -28,9 +29,8 @@ int findKthLargest(vector<int>& arr, int k) {
 
 int main()
 {
-    vector<int> arr = {3,2,1,5,6,4};
-    int k = 2;
-    findKthLargest(arr, 2);
-
+    vector<int> arr = {3,2,3,1,2,4,5,5,6};
+    int k = 4;
+    cout<<findKthLargest(arr, k);
    
 }

@@ -15,25 +15,41 @@
 // Notice that the order of the output and the order of the triplets does not matter.
 
 
-vector<vector<int>> threeSum(vector<int>& arr) {
-        int target = 0;
-        sort(arr.begin(), arr.end());
-        vector<vector<int>> ans;
-        for (int i = 0; i < arr.size(); i++){
-            int j = i + 1;
-            int k = arr.size() - 1;
-            while (j < k) {
-                int sum = arr[i] + arr[j] + arr[k];
-                if (sum == target) {
-                    ans.push_back({arr[i], arr[j], arr[k]});
+vector<vector<int>> threeSum(vector<int> &arr)
+{
+    sort(arr.begin(), arr.end()); 
+
+    int n = arr.size();
+    int data = 0;
+    vector<vector<int>> res;
+
+    for (int i = 0; i < n; i++)
+    {
+        while (i != 0 && i < n && arr[i] == arr[i - 1]){
+            i++;
+        }  
+        int j = i + 1, k = n - 1;
+
+        while (j < k)
+        {
+            int sum = arr[i] + arr[j] + arr[k];
+            if (sum == data)
+            {
+                res.push_back({arr[i], arr[j], arr[k]});
+                j++;
+                k--;
+
+                while (j < k && arr[j] == arr[j - 1])
                     j++;
+                while (j < k && arr[k] == arr[k + 1])
                     k--;
-                } else if (sum < target) {
-                    j++;
-                } else {
-                    k--;
-                }
             }
+            else if (sum < data)
+                j++;
+            else
+                k--;
         }
-        return ans;
     }
+
+    return res;
+}

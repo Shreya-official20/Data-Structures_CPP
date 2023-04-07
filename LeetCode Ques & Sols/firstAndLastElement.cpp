@@ -53,7 +53,7 @@ using namespace std;
         }
         return -1;
     }
-    vector<int> searchRange(vector<int>& nums, int target) {
+    vector<int> searchRange(vector<int> &nums, int target) {
         vector<int>ans(2);
         ans[0] = firstIndex(nums, target);
         ans[1] = lastIndex(nums, target);
@@ -63,7 +63,8 @@ using namespace std;
 
     int main(){
     vector<int>nums = {5,7,7,8,8,10};
-    int k = 8;
-    searchRange(nums, 8);
+    int target = 8;
+
+    cout<<searchRange(nums, target);
  
 }

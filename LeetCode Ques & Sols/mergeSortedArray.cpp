@@ -40,8 +40,8 @@ using namespace std;
     }
 
 int main(){
-    vector<int>arr1 = {1,3,4,5};
-    vector<int>arr2 = {2,4,6,8};
+    vector<int>arr1 = {1,2,3,0,0,0};
+    vector<int>arr2 = {2,5,6};
     
     int m = sizeof(arr1)/ sizeof(arr1[0]);
     int n = sizeof(arr2)/ sizeof(arr2[0]);

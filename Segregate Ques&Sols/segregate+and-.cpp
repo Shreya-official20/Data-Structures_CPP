@@ -33,7 +33,7 @@ void segregatePositiveAndNegative(vector<int> &arr){
 }
 
 int main(){
-    vector<int>arr = {4,-3,6,7,2,-8,-9,10,11,12,-19};
+    vector<int>arr = {1, -1, 3, 2, -7, -5, 11, 6};
     
     segregatePositiveAndNegative(arr);
     for(int i=0;i<arr.size(); i++){

@@ -1,1 +1,4 @@
-int k = 8;
+vector<int> ans = search(arr, target);
+    // for(int ele : ans){
+    //     cout<< ele << " ";
+    // }
